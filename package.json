@@ -1,0 +1,20 @@
+{
+  "name": "framework-party-frontend",
+  "private": true,
+  "workspaces": ["apps/**"],
+  "scripts": {
+    "dev:vue": "cd apps/vue-party && bun dev",
+    "lint": "biome lint",
+    "lint:fix": "biome format --write .",
+    "check": "biome check .",
+    "check:unsafe": "biome check --write --unsafe .",
+    "check:write": "biome check --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
