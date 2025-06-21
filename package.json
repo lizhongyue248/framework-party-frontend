@@ -3,6 +3,12 @@
   "private": true,
   "workspaces": ["apps/**"],
   "scripts": {
+    "dev": "concurrently \"bun run dev:lit\" \"bun run dev:qwik\" \"bun run dev:react\" \"bun run dev:solid\" \"bun run dev:svelte\" \"bun run dev:vue\"",
+    "dev:lit": "cd apps/lit-party && bun dev",
+    "dev:qwik": "cd apps/qwik-party && bun dev",
+    "dev:react": "cd apps/react-party && bun dev",
+    "dev:solid": "cd apps/solid-party && bun dev",
+    "dev:svelte": "cd apps/svelte-party && bun dev",
     "dev:vue": "cd apps/vue-party && bun dev",
     "lint": "biome lint",
     "lint:fix": "biome format --write .",
@@ -12,7 +18,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "concurrently": "^9.1.2"
   },
   "peerDependencies": {
     "typescript": "^5"

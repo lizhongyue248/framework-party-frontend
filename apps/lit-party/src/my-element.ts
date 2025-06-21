@@ -1,6 +1,7 @@
 import { LitElement, html } from "lit"
 import { customElement } from "lit/decorators.js"
 import "./components/reactivity/declare-state.ts"
+import "./components/reactivity/update-state.ts"
 /**
  * An example element.
  *
@@ -12,7 +13,8 @@ export class MyElement extends LitElement {
   render() {
     return html`
       <div>
-        <x-name />
+        <declare-state />
+        <update-state />
       </div>
     `
   }

@@ -1,5 +1,5 @@
-import { defineConfig } from "vite"
 import { qwikVite } from "@builder.io/qwik/optimizer"
+import { defineConfig } from "vite"
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -7,5 +7,6 @@ export default defineConfig({
     qwikVite({
       csr: true
     })
-  ]
+  ],
+  server: { port: 4001 }
 })
