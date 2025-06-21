@@ -1,7 +1,6 @@
 import type React from "react"
 import "./App.css"
 
-// 导入所有需要的组件
 import { Name } from "./components/0-reactivity/0-declare-state/name"
 import { UpdateCount } from "./components/0-reactivity/1-update-state/update-count"
 import { DoubleCount } from "./components/0-reactivity/2-computed-state/double-count"
