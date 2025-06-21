@@ -5,6 +5,21 @@
     "clientKind": "git",
     "useIgnoreFile": true
   },
+  "overrides": [{
+    "include": ["**/*.svelte", "**/*.astro", "**/*.vue"],
+    "linter": {
+      "rules": {
+        "style": {
+          "useConst": "off",
+          "useImportType": "off"
+        },
+        "correctness": {
+          "noUnusedVariables": "off",
+          "noUnusedImports": "off"
+        }
+      }
+    }
+  }],
   "files": {
     "ignoreUnknown": false,
     "ignore": ["public", "**/node_modules", "**/dist", "**/build", "**/.next", "**/.nuxt", "**/.output", "**/.vercel", "**/.cache", "**/public", "**/tsconfig*.json"]
