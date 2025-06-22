@@ -1,2 +1,7 @@
 import { createContext } from "@lit/context"
-export const themeContext = createContext("themeContext")
+
+export interface ThemeType {
+  current: string
+}
+
+export const themeContext = createContext<ThemeType>("themeContext")

@@ -2,12 +2,12 @@ import { ContextProvider } from "@lit/context"
 import { LitElement, html } from "lit"
 import { customElement, state } from "lit/decorators.js"
 import "./theme-toggle"
-import { themeContext } from "./theme-context.ts"
+import { type ThemeType, themeContext } from "./theme-context.ts"
 
 @customElement("theme-app")
 export class ThemeApp extends LitElement {
   @state()
-  theme = {
+  theme: ThemeType = {
     current: "dark"
   }
 

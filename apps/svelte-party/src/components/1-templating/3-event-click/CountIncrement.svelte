@@ -8,5 +8,5 @@ const increment = () => {
 
 <div>
   <div>Count: {count}</div>
-  <button on:click={increment}>Increment</button>
+  <button onclick={increment}>Increment</button>
 </div>
