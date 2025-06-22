@@ -1,0 +1,63 @@
+{
+  "setupTasks": [
+    {
+      "command": "npm i -g bun",
+      "name": "Installing Bun"
+    },
+    {
+      "command": "bun install",
+      "name": "Installing Dependencies"
+    }
+  ],
+  "tasks": {
+    "dev": {
+      "name": "dev",
+      "command": "bun run dev",
+      "runAtStart": true
+    },
+    "dev:lit": {
+      "name": "dev:lit",
+      "command": "bun run dev:lit"
+    },
+    "dev:qwik": {
+      "name": "dev:qwik",
+      "command": "bun run dev:qwik"
+    },
+    "dev:react": {
+      "name": "dev:react",
+      "command": "bun run dev:react"
+    },
+    "dev:solid": {
+      "name": "dev:solid",
+      "command": "bun run dev:solid"
+    },
+    "dev:svelte": {
+      "name": "dev:svelte",
+      "command": "bun run dev:svelte"
+    },
+    "dev:vue": {
+      "name": "dev:vue",
+      "command": "bun run dev:vue"
+    },
+    "lint": {
+      "name": "lint",
+      "command": "bun run lint"
+    },
+    "lint:fix": {
+      "name": "lint:fix",
+      "command": "bun run lint:fix"
+    },
+    "check": {
+      "name": "check",
+      "command": "bun run check"
+    },
+    "check:unsafe": {
+      "name": "check:unsafe",
+      "command": "bun run check:unsafe"
+    },
+    "check:write": {
+      "name": "check:write",
+      "command": "bun run check:write"
+    }
+  }
+}
