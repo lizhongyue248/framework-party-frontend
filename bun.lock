@@ -16,6 +16,8 @@
       "name": "lit-party",
       "version": "0.0.0",
       "dependencies": {
+        "@lit/context": "^1.1.5",
+        "@lit/task": "^1.0.2",
         "lit": "^3.3.0",
       },
       "devDependencies": {
@@ -209,7 +211,11 @@
 
     "@lit-labs/ssr-dom-shim": ["@lit-labs/ssr-dom-shim@1.3.0", "http://mirrors.cloud.tencent.com/npm/@lit-labs/ssr-dom-shim/-/ssr-dom-shim-1.3.0.tgz", {}, "sha512-nQIWonJ6eFAvUUrSlwyHDm/aE8PBDu5kRpL0vHMg6K8fK3Diq1xdPjTnsJSwxABhaZ+5eBi1btQB5ShUTKo4nQ=="],
 
+    "@lit/context": ["@lit/context@1.1.5", "http://mirrors.cloud.tencent.com/npm/@lit/context/-/context-1.1.5.tgz", { "dependencies": { "@lit/reactive-element": "^1.6.2 || ^2.1.0" } }, "sha512-57KyQD9of4RlBXkOIF1N40/BLY1j+1wLB5wRmB207+VtwNIRfXbanLsB6BsnFYXrycOUIp2d8gqTNGwuW1lE9Q=="],
+
     "@lit/reactive-element": ["@lit/reactive-element@2.1.0", "http://mirrors.cloud.tencent.com/npm/@lit/reactive-element/-/reactive-element-2.1.0.tgz", { "dependencies": { "@lit-labs/ssr-dom-shim": "^1.2.0" } }, "sha512-L2qyoZSQClcBmq0qajBVbhYEcG6iK0XfLn66ifLe/RfC0/ihpc+pl0Wdn8bJ8o+hj38cG0fGXRgSS20MuXn7qA=="],
+
+    "@lit/task": ["@lit/task@1.0.2", "http://mirrors.cloud.tencent.com/npm/@lit/task/-/task-1.0.2.tgz", { "dependencies": { "@lit/reactive-element": "^1.0.0 || ^2.0.0" } }, "sha512-ofj/fahKhhS1SpbPSC57OMo2BXMxHG/y4sxH/ahWzXT5dh1kxjex7WqbL8ammb6zIlqbFCj6z2aGFYOh/qCQ+g=="],
 
     "@rolldown/pluginutils": ["@rolldown/pluginutils@1.0.0-beta.9", "http://mirrors.cloud.tencent.com/npm/@rolldown/pluginutils/-/pluginutils-1.0.0-beta.9.tgz", {}, "sha512-e9MeMtVWo186sgvFFJOPGy7/d2j2mZhLJIdVW0C/xDluuOvymEATqz6zKsP0ZmXGzQtqlyjz5sC1sYQUoJG98w=="],
 
@@ -581,7 +587,7 @@
 
     "registry-url": ["registry-url@3.1.0", "http://mirrors.cloud.tencent.com/npm/registry-url/-/registry-url-3.1.0.tgz", { "dependencies": { "rc": "^1.0.1" } }, "sha512-ZbgR5aZEdf4UKZVBPYIgaglBmSF2Hi94s2PcIHhRGFjKYu+chjJdYfHn4rt3hB6eCKLJ8giVIIfgMa1ehDfZKA=="],
 
-    "require-directory": ["require-directory@2.1.1", "http://mirrors.cloud.tencent.com/npm/require-directory/-/require-directory-2.1.1.tgz", {}, "sha1-jGStX9MNqxyXbiNE/+f3kqam30I="],
+    "require-directory": ["require-directory@2.1.1", "http://mirrors.cloud.tencent.com/npm/require-directory/-/require-directory-2.1.1.tgz", {}, ""],
 
     "require-from-string": ["require-from-string@2.0.2", "http://mirrors.cloud.tencent.com/npm/require-from-string/-/require-from-string-2.0.2.tgz", {}, "sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw=="],
 
