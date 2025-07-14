@@ -1,0 +1,146 @@
+= framework-party-frontend
+
+本项目是一个多框架对比学习项目，包含了当前主流前端框架的实现示例。
+
+// CONTENT-START
+
+== 框架生态支持对比
+
+[cols="1,3,3,3,3", options="header"]
+|===
+|框架 |状态管理 |路由 |表单库 |请求库
+
+|https://react.dev/[React]
+|https://redux-toolkit.js.org/[Redux Toolkit], https://zustand-demo.pmnd.rs/[Zustand], https://jotai.org/[Jotai]
+|https://reactrouter.com/[React Router], https://nextjs.org/docs/routing[Next.js Router]
+|https://react-hook-form.com/[React Hook Form], https://formik.org/[Formik]
+|https://axios-http.com/[Axios], https://swr.vercel.app/[SWR], https://tanstack.com/query[TanStack Query]
+
+|https://vuejs.org/[Vue]
+|https://vuex.vuejs.org/[Vuex], https://pinia.vuejs.org/[Pinia]
+|https://router.vuejs.org/[Vue Router]
+|https://vee-validate.logaretm.com/[VeeValidate], https://vue-formulate.com/[Vue Formulate]
+|https://axios-http.com/[Axios], https://apollo.vuejs.org/[Vue Apollo]
+
+|https://svelte.dev/[Svelte]
+|https://svelte.dev/docs/svelte-store[Svelte Store], https://svelte.dev/docs/context-api[Context API]
+|https://kit.svelte.dev/docs/routing[SvelteKit Router], https://github.com/visionmedia/page.js[Page.js]
+|https://github.com/tjinauyeung/svelte-forms-lib[Svelte Forms Lib], https://felte.dev/[Felte]
+|https://axios-http.com/[Axios], https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API[Fetch API]
+
+|https://www.solidjs.com/[Solid]
+|https://www.solidjs.com/docs/latest/api#stores[Solid Store], https://www.solidjs.com/docs/latest/api#context[Context API]
+|https://github.com/solidjs/solid-router[@solidjs/router]
+|https://modular-forms.dev/[Modular Forms]
+|https://github.com/solidjs-community/solid-primitives/tree/main/packages/fetch[Solid Query], https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API[Fetch API]
+
+|https://lit.dev/[Lit]
+|https://lit.dev/docs/data/context/[@lit/context], https://mobx.js.org/[MobX], https://redux.js.org/[Redux]
+|https://github.com/andreasbm/router-slot[Router Slot], https://github.com/Polymer/pwa-helpers[LitElement Router]
+|https://lit.dev/docs/libraries/forms/[Lit Forms]
+|https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API[Fetch API], https://axios-http.com/[Axios]
+
+|https://qwik.builder.io/[Qwik]
+|https://qwik.builder.io/docs/components/state/[Qwik Store], https://qwik.builder.io/docs/components/state/#usesignal[useSignal]
+|https://qwik.builder.io/qwikcity/routing/[Qwik City Router]
+|https://modular-forms.dev/qwik[Modular Forms for Qwik]
+|https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API[Fetch API], https://qwik.builder.io/docs/advanced/prefetching/[Qwik Prefetching]
+|===
+
+== 组件库对比
+
+[cols="1,3,3,3,3", options="header"]
+|===
+|框架 |无样式组件库 |预设样式组件库 |样式系统 (CVA) |动画库
+
+|React
+|https://www.radix-ui.com/[Radix UI], https://headlessui.com/[Headless UI], https://ariakit.org/[Ariakit], https://react-spectrum.adobe.com/react-aria/[React Aria]
+|https://ant.design/[Ant Design], https://mui.com/[Material-UI], https://chakra-ui.com/[Chakra UI], https://nextui.org/[NextUI], https://mantine.dev/[Mantine]
+|https://cva.style/docs[CVA], https://www.tailwind-variants.org/[Tailwind Variants], https://stitches.dev/[Stitches], https://styled-components.com/[Styled Components]
+|https://www.framer.com/motion/[Framer Motion], https://react-spring.dev/[React Spring], https://reactcommunity.org/react-transition-group/[React Transition Group], https://auto-animate.formkit.com/[AutoAnimate]
+
+|Vue
+|https://headlessui.com/vue/menu[Headless UI Vue], https://www.radix-vue.com/[Radix Vue], https://vueuse.org/[VueUse]
+|https://element-plus.org/[Element Plus], https://quasar.dev/[Quasar], https://vuetifyjs.com/[Vuetify], https://primevue.org/[PrimeVue], https://arco.design/vue[Arco Design Vue]
+|https://cva.style/docs[CVA], https://www.tailwind-variants.org/[Tailwind Variants], https://vue-styled-components.com/[Vue Styled Components]
+|https://vue-transition.netlify.app/[Vue Transition], https://vueuse.org/motion/[Vue Use Motion], https://auto-animate.formkit.com/[AutoAnimate], https://greensock.com/gsap/[GSAP]
+
+|Svelte
+|https://melt-ui.com/[Melt UI], https://headlessui-svelte.vercel.app/[Headless UI Svelte]
+|https://sveltematerialui.com/[Svelte Material UI], https://carbon-components-svelte.onrender.com/[Carbon Components], https://flowbite-svelte.com/[Flowbite Svelte]
+|https://cva.style/docs[CVA], https://www.tailwind-variants.org/[Tailwind Variants], https://styled-components.com/docs/tooling#svelte[Styled Components Svelte]
+|https://svelte.dev/docs/svelte-transition[Svelte Transitions], https://svelte.dev/docs/svelte-animate[Svelte Animate], https://auto-animate.formkit.com/[AutoAnimate]
+
+|Solid
+|https://kobalte.dev/[Kobalte], https://solid-primitives.netlify.app/[Solid Primitives]
+|https://hope-ui.com/[Hope UI], https://suid.io/[SUID], https://solid-ui.com/[Solid UI]
+|https://cva.style/docs[CVA], https://www.tailwind-variants.org/[Tailwind Variants], https://github.com/solidjs/solid-styled-components[Solid Styled Components]
+|https://motion.dev/[Motion One], https://github.com/solidjs-community/solid-primitives/tree/main/packages/transition-group[Solid Transition Group], https://auto-animate.formkit.com/[AutoAnimate]
+
+|Lit
+|https://lit.dev/docs/components/overview/[Lit Components], https://github.com/lit/lit-element[LitElement Base]
+|https://github.com/material-components/material-web[Material Web Components], https://shoelace.style/[Shoelace], https://lion-web.netlify.app/[Lion Web Components]
+|https://lit.dev/docs/components/styles/[Lit CSS], https://github.com/lit/lit/tree/main/packages/lit-html[lit-html 样式]
+|https://lit.dev/docs/components/lifecycle/#reactive-update-cycle[Lit 生命周期], https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API[Web Animations API], https://greensock.com/gsap/[GSAP]
+
+|Qwik
+|https://qwikui.com/docs/headless/introduction[Qwik UI Headless]
+|https://qwikui.com/[Qwik UI], https://github.com/qwikifiers/qwik-ui[Qwik UI Community]
+|https://qwik.builder.io/docs/components/styles/[Qwik 样式], https://cva.style/docs[CVA]
+|https://motion.dev/[Motion One], https://auto-animate.formkit.com/[AutoAnimate], https://greensock.com/gsap/[GSAP]
+|===
+// CONTENT-END
+
+== 项目结构
+
+项目采用 monorepo 架构，每个框架都有独立的应用：
+
+* `apps/react-party` - React 应用示例
+* `apps/vue-party` - Vue 3 应用示例
+* `apps/svelte-party` - Svelte 应用示例
+* `apps/solid-party` - SolidJS 应用示例
+* `apps/lit-party` - Lit 应用示例
+* `apps/qwik-party` - Qwik 应用示例
+
+== 快速开始
+
+=== 安装依赖
+[source,bash]
+----
+bun install
+----
+
+=== 启动所有应用
+[source,bash]
+----
+bun run dev
+----
+
+=== 启动单个应用
+[source,bash]
+----
+# 启动 React 应用
+bun run dev:react
+
+# 启动 Vue 应用
+bun run dev:vue
+
+# 启动 Svelte 应用
+bun run dev:svelte
+
+# 启动 Solid 应用
+bun run dev:solid
+
+# 启动 Lit 应用
+bun run dev:lit
+
+# 启动 Qwik 应用
+bun run dev:qwik
+----
+
+== 技术栈
+
+* 构建工具: https://vitejs.dev/[Vite]
+* 包管理器: https://bun.sh/[Bun]
+* 代码规范: https://biomejs.dev/[Biome]
+* 语言: https://www.typescriptlang.org/[TypeScript]
